@@ -1,1 +1,30 @@
 // Navigation code here
+
+
+// .display (width|height|direction|justify|align)
+nav {
+    margin: 0 auto;
+    .display (100%, 110px, column, center, center);
+    padding: 20px;
+    background: @nav-bg;
+    border-bottom: 2px solid @nav-border;
+
+    h1 {
+        font-size: 4rem;
+        margin: 20px 0 30px 0;
+    }
+
+    .links {
+        max-width: 800px;
+        .display (100%, auto, row, center, center);
+        // margin: 20px;
+
+        a {
+            text-decoration: none;
+            font-size: 1.7rem;
+            color: @nav-font;
+            padding: 20px 20px 20px 20px;
+            margin-bottom: 20px;
+        }
+    }
+}

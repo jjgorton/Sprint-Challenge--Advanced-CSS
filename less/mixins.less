@@ -1,1 +1,12 @@
 // Mixins Here
+
+// .display (width|height|direction|justify|align)
+
+.display (@w, @h, @d, @j, @a) {
+    width: @w;
+    height: @h;
+    display: flex;
+    flex-direction: @d;
+    justify-content: @j;
+    align-items: @a;
+}
