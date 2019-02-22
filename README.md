@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+  1 - Both adaptive and responsive websites use media queries to adjust to the device's viewport, however responsive websites will adjust to more than just one or two other viewport sizes by using responsive units such as percent (%) and rem.  Adaptive, on the other hand, uses hard coded units such as pixels (px).
+
 2. Describe what it means to be mobile first vs desktop first.
+
+2 - In short tech terms: using "min-width" instead of "max-width" in media queries.  Starting with the mobile design and adjusting the design for larger viewports is "mobile first".  Stating with the desktop design and adjusting the design for smaller viewport is "desktop first"
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+3 - 10px / 16px (most browser's default font-size).  By setting the font-size to 62.5% allows the rem unit to be a multiple of the default browser font-size.  Easier math.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+4 - Preprocessors, such as less or sass, allows developers to style their code using another coding language that gives them more options.  This language is then compiled into the standard CSS.  
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+5 - I love mixins, variables, nesting, imports.  They all make styling so much more efficient.  Media query variable syntax is a bit strange to me, though:  sometimes needing to use the tilde (~) and quotes ('').
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
