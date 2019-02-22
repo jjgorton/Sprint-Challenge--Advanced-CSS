@@ -10,3 +10,22 @@
     justify-content: @j;
     align-items: @a;
 }
+
+.button (@w, @h, @r, @fs) {
+    width: @w;
+    height: @h;
+    background: @btn-bg-color;
+    color: @wild-sand;
+    border-radius: @r;
+    font-size: @fs;
+    text-align: center;
+    padding: 10px;
+
+    &:hover {
+        color: @btn-bg-color;
+        background: @wild-sand;
+        cursor: pointer;
+        border: 2px solid @waterloo;
+        padding: 8px;
+    }
+}
